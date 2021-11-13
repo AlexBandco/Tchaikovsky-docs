@@ -24,7 +24,7 @@
         <nav class="header__navbar">
           <ul class="header__navbar-list">
             <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Главная</a></li>
-            <li class="header__navbar-item">
+            <li class="header__navbar-item header__navbar-item-submenu">
               <button class="header__navbar-link dropdown-item">Путеводитель</button>
               <ul class="header__navbar-sublist">
                 <li class="header__navbar-subitem"><a href="./hotels.html" class="header__navbar-sublink">Гостиницы</a></li>
@@ -51,20 +51,26 @@
             <span></span>
           </div>
         </div>
-        <div class="header__aside-form form-aside">
-          <form action="#" class="form-aside__body">
-            <input type="text" class="form-aside__input">
-            <button class="form-aside__button">
-              <img src="./img/header-intro/search-icon.png" alt="Поиск" title="Поиск по сайту" class="aside-img">
-            </button>
-          </form>
-        </div>
+
         <div class="header__aside-language">
           <select class='header__aside-select' name=''>
             <option value='En' selected='selected'>En</option>
             <option value='Ru'>Ru</option>
           </select>
         </div>
+
+        <div class="header__aside-form form-aside">
+          <button class="form-aside__triger">
+            <img src="./img/header-intro/search-icon.png" alt="Поиск" title="Поиск по сайту" class="aside-img form-aside__triger-img">
+          </button>
+          <form action="#" class="form-aside__body">
+            <input type="text" class="form-aside__input">
+            <button type="submit" class="form-aside__button">
+              <img src="./img/header-intro/search-icon.png" alt="Поиск" title="Поиск по сайту" class="aside-img">
+            </button>
+          </form>
+        </div>
+
         <div class="header__aside-social">
           <a href="https://www.instagram.com/" target="_blank" class="header__aside-link">
             <img src="./img/header-intro/instagram-icon.png" alt="instagram" class="aside-img">
@@ -260,6 +266,9 @@
     </div>
 
     <footer>
+  <div class="scrollup">
+    <img class="scrollup-img" src="./img/scrollup.png" alt="scrollup">
+  </div>
   <div class="container">
     <img src="./img/header-intro/arrows .png" alt="" class="arrow-footer">
     <ul class="footer-list">
@@ -281,8 +290,8 @@
       <li><a href="">Отзывы</a></li>
     </ul>
     <ul class="footer-subList">
-      <li><a href="">Контакты</a></li>
-      <li><a href="">Политика конфиденцальности</a></li>
+      <li><a href="./contacts.html">Контакты</a></li>
+      <li><a href="">Политика конфиденциальности</a></li>
       <li><a href="">Вход</a></li>
     </ul>
     <div class="footer-row">
@@ -291,7 +300,7 @@
           <img src="img/footer/01.png" alt="">
           <img src="img/footer/02.png" alt="" class="footer-logo">
         </div>
-        <p>© Управление финансов и экономического развития администрации Чайковского городского округа</p>
+        <p><span class="icon-copyright">©</span> Управление финансов и экономического развития администрации Чайковского городского округа</p>
       </div>
       <div class="footer-row__item">
         <img src="img/footer/03.png" alt="">
@@ -299,67 +308,6 @@
     </div>
   </div>
 </footer>
-<!-- <footer class="footer">
-  <div class="container ">
-
-    <div class="footer__inner">
-
-      <div class="header__inner-navigation">
-        <nav class="header__navbar">
-          <ul class="header__navbar-list">
-            <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Главная</a></li>
-            <li class="header__navbar-item">
-              <button class="header__navbar-link dropdown-item">Путеводитель</button>
-              <ul class="header__navbar-sublist">
-                <li class="header__navbar-subitem"><a href="#" class="header__navbar-sublink">Гостиницы</a></li>
-                <li class="header__navbar-subitem"><a href="#" class="header__navbar-sublink">Кафе и рестораны</a></li>
-                <li class="header__navbar-subitem"><a href="#" class="header__navbar-sublink">Досуг</a></li>
-                <li class="header__navbar-subitem"><a href="#" class="header__navbar-sublink">Экскурсии</a></li>
-                <li class="header__navbar-subitem"><a href="#" class="header__navbar-sublink">Деловой туризм</a></li>
-                <li class="header__navbar-subitem"><a href="#" class="header__navbar-sublink">Оздоровительный туризм</a></li>
-              </ul>
-            </li>
-            <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Новости</a></li>
-            <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Карта города</a></li>
-            <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Виртуальный тур</a></li>
-            <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Профессионалам</a></li>
-            <li class="header__navbar-item"><a href="./index.html" class="header__navbar-link">Отзывы</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer__info">
-        <div class="footer__info-contacts">
-          <a href="#" class="footer__info-link">Контакты</a>
-        </div>
-        <div class="footer__info-policy">
-          <a href="#" class="footer__info-link">Политика конфиденцальности</a>
-        </div>
-        <div class="footer__info-entrance">
-          <a href="#" class="footer__info-link">Вход</a>
-        </div>
-      </div>
-
-      <div class="footer__copy">
-        <div class="footer__copy-img">
-          <img src="./img/footer/01.png" alt="">
-        </div>
-        <div class="footer__copy-img">
-          <img src="./img/footer/02.png" alt="">
-        </div>
-        <div class="footer__copy-text">
-          © Управление финансов и экономического развития администрации Чайковского городского округа
-        </div>
-        <div class="footer__copy-img">
-          <img src="./img/footer/03.png" alt="">
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
-</footer> -->
 
 
 
